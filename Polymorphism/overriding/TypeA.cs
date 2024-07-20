@@ -9,7 +9,11 @@ namespace Polymorphism.overriding
     public class TypeA
     {
         public int A { get; set; }
-        public TypeA(int a) => A = a ;
+        public TypeA(int a)
+        {
+            A = a;
+            Console.WriteLine("hello i am typeA ctor"); 
+        }
         public void myFunction01()
         {
             Console.WriteLine("I am a base");
