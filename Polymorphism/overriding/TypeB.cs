@@ -14,6 +14,7 @@ namespace Polymorphism.overriding
         public TypeB(int _A ,int _B):base(_A)
         {
             B = _B;
+            Console.WriteLine("hello i am typeB ctor");
         }
         //new=>i can override by new , this is the fist method to override from parent
         public new void myFunction01()
